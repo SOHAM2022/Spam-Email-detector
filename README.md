@@ -1,1 +1,7 @@
 # Spam-Email-detector
+
+Spam emails—such as phishing attempts and promotional advertisements—result in significant financial losses for both individuals and organizations each year. While numerous automated techniques have been developed to detect such emails, achieving perfect accuracy remains a challenge. One of the earliest and simplest approaches, the Naive Bayes classifier, was initially effective but has since been surpassed by more advanced machine learning and deep learning models, particularly those designed for Natural Language Processing (NLP).
+
+In this project, several NLP preprocessing techniques were applied, including removal of stopwords, stemming, and filtering out non-ASCII characters, to create a cleaner and more informative corpus for model training. The processed data was then used to train and evaluate various models, including logistic regression, Naive Bayes, support vector classifier (SVC), artificial neural networks (ANN), and long short-term memory (LSTM) networks.
+
+While most models demonstrated strong classification performance, overfitting emerged as a common challenge, especially with deep learning models. To address this, K-fold cross-validation was employed for machine learning models, while early stopping and dropout layers were integrated into the training of deep learning models to mitigate overfitting. After further evaluation, the LSTM model stood out for its high accuracy and effectiveness in spam detection.
